@@ -1,13 +1,6 @@
 /*
-  BUGS
-  - Append meta breaks if you are trying to do it for more than two things. Somethings wrong with
-  the while loop in there somewheree
-  TODO
-
-  WISHLIST
-  - Figure out this sleeping thing
-  NOTE
-  - Header data is absolute (Use SEEK_SET)
+	Main program. See the usage function near the bottom for instructions. 
+	This program forks off compress.c once for each file given in the argument list/ or in the given directories.
 */
 
 #include "shared.h"
@@ -233,7 +226,7 @@ void archive_file(char * filename, char * pitt_file)
     // update offset to reflect new file
     curr_offset += sizeof(st.st_size);
 
-    header.meta_offset = curr_offset;                  // is curr_offset viable right now
+    header.meta_offset = curr_offset;                  
 
     // read in .Z file
     fd = open(filename, O_RDONLY);
