@@ -82,10 +82,7 @@ int main(int argc, char *argv[])
 	_setsize(in, st.st_size);
 	close(fd);
  
-	//	printf("%s's input size:   %d\n", argv[1], (int) _len(in));
- 
 	byte *enc = lzw_encode(in, 9);
-	//	printf("%s's encoded size: %d\n", argv[1], (int) _len(enc));
  
 	strcpy(out, argv[1]);
 	strcat(out, ".Z");
