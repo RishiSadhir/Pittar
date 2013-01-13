@@ -2,11 +2,11 @@ Pittar by Rishi Sadhir
 Rishi.Sadhir@gmail.com
 
 * Introduction
-  A command line utitlity used to compress a list files/directories. Additionally, files/directories may be appeneded to an existing executable. One may completely or selectively decompress files.
+  A command line utitlity used to compress a list files/directories. Additionally, files/directories may be compressed then appeneded to an existing compressed file (.pitt file). One may completely or selectively decompress files to any desired location. All permissions are preserved.
 
 * Compilation
   This program was compiled using gcc version 4.2. Versions prior to 4.0 will find trouble with the -fnested-functions flag that is required to 
-compile this program. If this is the case, the executables have been provided as well.
+compile this program.
 
 * Usage
   pittar {-c|-a|-x|-m|-p} <archive-file> <file/directory list>
@@ -19,4 +19,5 @@ compile this program. If this is the case, the executables have been provided as
    - p = print metadata
 
 * Problems
-  None known.
+  None known. Prior to being flattened in to a single .pitt file, the files are first individually compressed into .Z files. This version does not delete these .Z file. This was made for educational purposes, and actually seeing the .Z files was helpful. In practical use, one would need to modify the code to allow delete these .Z files after flattening.
+
