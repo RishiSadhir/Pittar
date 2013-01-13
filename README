@@ -1,5 +1,5 @@
-Rishi Sadhir
-Project 3 - pittar
+Pittar by Rishi Sadhir
+Rishi.Sadhir@gmail.com
 
 * Introduction
   A command line utitlity used to compress a list files/directories. Additionally, files/directories may be appeneded to an existing executable. One may completely or selectively decompress files.
