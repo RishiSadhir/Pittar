@@ -1,3 +1,8 @@
+/*
+	Uses LZW to compress a file. The algorithm can be found on the LZW page on wikipedia.
+	This program is forked off once for each file in the argument list by pittar.c
+*/
+
 #include "shared.h"
 
 byte* lzw_encode(byte *in, int max_bits)
