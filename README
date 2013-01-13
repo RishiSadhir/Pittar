@@ -1,0 +1,22 @@
+Rishi Sadhir
+Project 3 - pittar
+
+* Introduction
+  A command line utitlity used to compress a list files/directories. Additionally, files/directories may be appeneded to an existing executable. One may completely or selectively decompress files.
+
+* Compilation
+  This program was compiled using gcc version 4.2. Versions prior to 4.0 will find trouble with the -fnested-functions flag that is required to 
+compile this program. If this is the case, the executables have been provided as well.
+
+* Usage
+  pittar {-c|-a|-x|-m|-p} <archive-file> <file/directory list>
+
+  where
+   - c = compress
+   - a = append
+   - x = extract
+   - m = prints hierarchies
+   - p = print metadata
+
+* Problems
+  None known.
